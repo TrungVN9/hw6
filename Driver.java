@@ -1,8 +1,6 @@
 // Driver class to demonstrate the features
 public class Driver {
     public static void main(String[] args) {
-        System.out.println("=== Chat Application Demo ===\n");
-        
         // Create the mediator (chat server)
         ChatServer chatServer = new ChatServer();
         
