@@ -1,5 +1,5 @@
 // Driver class to demonstrate the features
-public class ChatApplicationDemo {
+public class Driver {
     public static void main(String[] args) {
         System.out.println("=== Chat Application Demo ===\n");
         
@@ -59,7 +59,7 @@ public class ChatApplicationDemo {
         
         System.out.println("\n--- TEST PART 6: Multiple recipients and undo ---");
         // Alice sends a message to both Bob and Charlie
-        alice.sendMessage("Meeting at 3 PM today!", "Bob", "Charlie");
+        alice.sendMessage("Go Boba at 3 PM today!", "Bob", "Charlie");
         
         // Display everyone's history
         bob.displayChatHistory();
@@ -76,5 +76,7 @@ public class ChatApplicationDemo {
         System.out.println("\n--- TEST PART 7: Iterating messages by user ---");
         // Alice wants to see her message history with only Bob
         alice.displayMessagesByUser(bob);
+        alice.displayMessagesByUser(charlie);
+        bob.displayMessagesByUser(charlie);
     }
 }
